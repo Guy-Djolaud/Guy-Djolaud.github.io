@@ -6,7 +6,7 @@ permalink: /publication/2024-02-17-paper-title-number-4
 excerpt: ''
 date: 2024-02-17
 venue: ''
-paperurl: 'https://academicpages.github.io/files/paper3.pdf'
+paperurl: 'https://files/Djolaud_Guy_Arnold_2017_memoire.pdf'
 ---
 
 Phillips (1958) in his study on England, showed the existence of a relationship between the unemployment rate and inflation, and the potential existence of an arbitrage between those two aggregates.
