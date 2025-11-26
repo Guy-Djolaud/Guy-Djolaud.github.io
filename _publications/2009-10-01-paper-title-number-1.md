@@ -1,5 +1,5 @@
 ---
-title: "Labour Market Power in Canada"
+title: "Labour Market Power in Canada (JMP)"
 collection: publications
 category: manuscripts
 permalink: /publications/2009-10-01-paper-title-number-1
