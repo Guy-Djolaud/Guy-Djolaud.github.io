@@ -2,10 +2,10 @@
 title: "The Trajectory of Immigrants’ Exposure to Labour Market Power in Canada"
 collection: publications
 category: manuscripts
-permalink: /publications/2010-10-01-paper-title-number-2
+permalink: /publication/2010-10-01-paper-title-number-2
 excerpt: 'with [Yaya Diallo](https://myayadiallo.com/)'
 date: 2025-10-01
-slidesurl: 'https://academicpages.github.io/files/slides2.pdf'
+slidesurl: '/files/2025_CRDCN_Labor_concentration_of_Foreign_born_in_Canada_.pdf'
 paperurl: '/files/2025_Diallo_Guy_Labor_concentration_of_Foreign_born_in_Canada_.pdf'
 ---
 This paper investigates the trajectory of labour market concentration among immigrants in the 
