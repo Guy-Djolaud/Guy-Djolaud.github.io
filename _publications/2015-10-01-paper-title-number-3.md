@@ -7,6 +7,5 @@ excerpt: 'with [Kanta Kumari](https://www.worldbank.org/en/about/people/k/kanta-
 date: 2015-10-01
 slidesurl: 'https://academicpages.github.io/files/slides3.pdf'
 paperurl: 'https://academicpages.github.io/files/paper3.pdf'
-citation: ''
 ---
 Climate finance diagnostics, fiscal policy modeling and green growth scenario analysis
