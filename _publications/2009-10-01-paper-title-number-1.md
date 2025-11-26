@@ -8,7 +8,6 @@ date: 2025-10-30
 slidesurl: 'https://academicpages.github.io/files/slides1.pdf'
 paperurl: '/files/Labour_Market_Power_JMP_Guy_Djolaud (1).pdf'
 bibtexurl: '/files/CEA_Slides.pdf'
-citation: ''
 ---
 
 This paper provides the first time-series analysis of labour market concentration in Canada, 
