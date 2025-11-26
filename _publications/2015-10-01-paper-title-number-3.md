@@ -1,14 +1,12 @@
 ---
-title: "Paper Title Number 3"
+title: "Country Climate Diagnostic Report – Cote d’Ivoire (pages 209–216)"
 collection: publications
-category: manuscripts
-permalink: /publication/2015-10-01-paper-title-number-3
-excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
+category: conferences
+permalink: /publications/2015-10-01-paper-title-number-3
+excerpt: 'Climate finance diagnostics, fiscal policy modeling and green growth scenario analysis'
 date: 2015-10-01
-venue: 'Journal 1'
 slidesurl: 'https://academicpages.github.io/files/slides3.pdf'
 paperurl: 'https://academicpages.github.io/files/paper3.pdf'
-citation: 'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
+citation: ''
 ---
-
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+with [Kanta Kumari](https://www.worldbank.org/en/about/people/k/kanta-kumari-rigaud)
