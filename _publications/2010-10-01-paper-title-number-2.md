@@ -5,9 +5,9 @@ category: manuscripts
 permalink: /publications/2010-10-01-paper-title-number-2
 excerpt: ''
 date: 2025-10-01
-venue: ''
 slidesurl: 'https://academicpages.github.io/files/slides2.pdf'
 paperurl: '/files/2025_Diallo_Guy_Labor_concentration_of_Foreign_born_in_Canada_.pdf'
+citation: ''
 ---
 
 This paper investigates the trajectory of labour market concentration among immigrants in the 
