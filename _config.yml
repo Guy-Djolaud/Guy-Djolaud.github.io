@@ -84,9 +84,9 @@ publication_category:
   manuscripts:
     title: 'Working Papers'    
   conferences:
-    title: 'Applied Policy Work'
+    title: 'Policy Papers'
   books:
-    title: 'Pre-doctoral Articles'
+    title: 'Pre-doctoral Papers'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
