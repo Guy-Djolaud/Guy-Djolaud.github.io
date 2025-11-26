@@ -5,7 +5,6 @@ category: manuscripts
 permalink: /publications/2009-10-01-paper-title-number-1
 excerpt: ''
 date: 2025-10-30
-venue: 'Journal 1'
 slidesurl: 'https://academicpages.github.io/files/slides1.pdf'
 paperurl: '/files/Labour_Market_Power_JMP_Guy_Djolaud (1).pdf'
 bibtexurl: '/files/CEA_Slides.pdf'
