@@ -1,9 +1,9 @@
 ---
-title: "The Trajectory of Immigrants’ Exposure to Labour Market Power in Canada"
+title: "Immigration, Labour Dynamics, and Fiscal Sustainability"
 collection: publications
 category: manuscripts
 permalink: /publication/2010-10-01-paper-title-number-2
-excerpt: 'with [Yaya Diallo](https://myayadiallo.com/)'
+excerpt: 'with [Fatim Diabagate](https://blogs.worldbank.org/en/team/f/fatim-lahonri-diabagate)'
 date: 2025-10-01
 slidesurl: '/files/2025_CRDCN_Labor_Market_Concentration.pdf'
 paperurl: '/files/2025_Diallo_Guy_Labor_concentration_of_Foreign_born_in_Canada_.pdf'
