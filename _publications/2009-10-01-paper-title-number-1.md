@@ -1,5 +1,5 @@
 ---
-title: "Labour Market Power in Canada (JMP)"
+title: "Labour Market Power in Canada : Long-term Trends and Cyclical Dynamics (JMP)"
 collection: publications
 category: manuscripts
 permalink: /publications/2009-10-01-paper-title-number-1
