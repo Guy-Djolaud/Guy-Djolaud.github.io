@@ -1,5 +1,5 @@
 ---
-title: "Country Climate Diagnostic Report – Cote d’Ivoire (pages 208–216)"
+title: "Country Climate Diagnostic Report – Cote d’Ivoire (pages 209–216)"
 collection: publications
 category: conferences
 permalink: /publications/world-bank-ccdr-cote-divoire

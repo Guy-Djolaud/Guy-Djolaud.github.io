@@ -50,8 +50,12 @@
             </time>
         </p>
     {% endif %}
-    {% if post.category == 'manuscripts' %}
+    {% if post.category == 'manuscripts' or post.category == 'submitted' %}
+      {% if post.hide_date %}
+        {% if post.venue %}<p class="page__meta"><i>{{ post.venue }}</i></p>{% endif %}
+      {% else %}
    <p class="page__meta">{% if post.venue %}<i>{{ post.venue }}</i> &middot; {% endif %}Last updated {{ post.date | default: "1900-01-01" | date: "%B %Y" }}</p>
+      {% endif %}
     {% endif %}
 {% endif %}
 

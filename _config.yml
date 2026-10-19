@@ -28,7 +28,7 @@ author:
   pronouns         : # example: "she/her"
   bio              : "Labour Economics & Macroeconomics"
   location         : "Montreal, Canada"
-  employer         : "McGill University"
+  employer         : "CIREQ, McGill University"
   uri              : # URL
   email            : "kili.djolaud@mail.mcgill.ca" 
 
@@ -81,6 +81,8 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
+  submitted:
+    title: 'Submitted Papers'
   manuscripts:
     title: 'Working Papers'    
   conferences:
