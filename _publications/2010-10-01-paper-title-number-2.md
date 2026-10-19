@@ -1,7 +1,8 @@
 ---
 title: "The Trajectory of Immigrants’ Exposure to Labour Market Power in Canada"
 collection: publications
-category: labour
+category: working
+order: 4
 status: 'Working Paper'
 permalink: /publications/immigrants-labour-market-power
 redirect_from:

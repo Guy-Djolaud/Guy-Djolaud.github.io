@@ -81,10 +81,10 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  macro:
-    title: 'Macro-Fiscal and Monetary Policy, Debt Sustainability'
-  labour:
-    title: 'Labour Markets, Jobs, and Competition'
+  research:
+    title: 'Research'
+  working:
+    title: 'Working Papers'
   policy:
     title: 'Policy Work'
 

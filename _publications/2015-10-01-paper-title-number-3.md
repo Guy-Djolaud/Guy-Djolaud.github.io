@@ -2,6 +2,7 @@
 title: "Country Climate Diagnostic Report – Côte d’Ivoire (pages 209–216)"
 collection: publications
 category: policy
+order: 6
 venue: 'World Bank Group, 2023'
 permalink: /publications/world-bank-ccdr-cote-divoire
 redirect_from:

@@ -2,6 +2,7 @@
 title: "Import Penetration of Low Quality Products: Markup Implications"
 collection: publications
 category: labour
+published: false # removed from the Research page (Oct 2026); set to true to restore
 status: 'Working Paper'
 permalink: /publications/import-penetration-markups
 excerpt: ''

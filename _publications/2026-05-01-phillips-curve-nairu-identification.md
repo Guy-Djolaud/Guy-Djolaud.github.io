@@ -1,7 +1,8 @@
 ---
 title: "Phillips Curve Flattening Mechanically Weakens NAIRU Identification"
 collection: publications
-category: macro
+category: research
+order: 3
 status: 'Submitted'
 permalink: /publications/phillips-curve-nairu-identification
 excerpt: ''

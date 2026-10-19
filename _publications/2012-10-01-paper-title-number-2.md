@@ -1,7 +1,8 @@
 ---
 title: "Immigration, Labour Dynamics, and Fiscal Sustainability"
 collection: publications
-category: macro
+category: working
+order: 5
 status: 'Working Paper'
 permalink: /publications/immigration-fiscal-sustainability
 redirect_from:

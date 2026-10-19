@@ -1,7 +1,8 @@
 ---
 title: "Labour Market Power in Canada: Long-term Trends and Cyclical Dynamics"
 collection: publications
-category: labour
+category: research
+order: 1
 status: 'Job Market Paper'
 permalink: /publications/labour-market-power-canada
 redirect_from:
