@@ -42,16 +42,19 @@
     "vendor/font-awesome/brands"
 ; 
 
-author__avatar img {
-  max-width: 250px !important;  /* taille par défaut : ~144px */
-  width: 250px !important;
+/* Larger, perfectly round profile photo (default size: ~144px) */
+.author__avatar img {
+  width: 220px !important;
+  max-width: 100% !important;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center top;
   border-radius: 50%;
 }
 
-/* Responsive : plus petit sur mobile */
+/* Smaller on mobile */
 @media (max-width: 768px) {
   .author__avatar img {
-    max-width: 180px !important;
-    width: 180px !important;
-  } 
-   }
+    width: 160px !important;
+  }
+}

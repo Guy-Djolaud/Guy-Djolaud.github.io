@@ -1,8 +1,10 @@
 ---
-title: "Labour Market Power in Canada : Long-term Trends and Cyclical Dynamics (JMP)"
+title: "Labour Market Power in Canada: Long-term Trends and Cyclical Dynamics (Job Market Paper)"
 collection: publications
 category: manuscripts
-permalink: /publications/2009-10-01-paper-title-number-1
+permalink: /publications/labour-market-power-canada
+redirect_from:
+  - /publications/2009-10-01-paper-title-number-1
 excerpt: ''
 date: 2025-10-30
 slidesurl: '/files/CEA_Slides.pdf'

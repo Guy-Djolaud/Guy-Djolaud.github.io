@@ -51,7 +51,7 @@
         </p>
     {% endif %}
     {% if post.category == 'manuscripts' %}
-   <p> Last Updated <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }} </p>
+   <p class="page__meta">{% if post.venue %}<i>{{ post.venue }}</i> &middot; {% endif %}Last updated {{ post.date | default: "1900-01-01" | date: "%B %Y" }}</p>
     {% endif %}
 {% endif %}
 
@@ -66,8 +66,8 @@
 {% endif %}
 {% if post.paperurl or post.slidesurl or post.bibtexurl %}
   <p>
-    {% if post.paperurl %}<a href="{{ post.paperurl }}">Download Paper</a>{% endif %}
-    {% if post.slidesurl %}{% if post.paperurl %} | {% endif %}<a href="{{ post.slidesurl }}">Download Slides</a>{% endif %}
+    {% if post.paperurl %}<a href="{{ post.paperurl | uri_escape }}" target="_blank" rel="noopener"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> Paper</a>{% endif %}
+    {% if post.slidesurl %}{% if post.paperurl %} | {% endif %}<a href="{{ post.slidesurl | uri_escape }}" target="_blank" rel="noopener"><i class="fas fa-fw fa-person-chalkboard" aria-hidden="true"></i> Slides</a>{% endif %}
     {% if post.bibtexurl %}{% if post.paperurl or post.slidesurl %} | {% endif %}<a href="{{ post.bibtexurl }}">Download Bibtex</a>{% endif %}
   </p>
 {% endif %}
