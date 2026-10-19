@@ -1,5 +1,5 @@
 ---
-title: "Bayesian Estimation of the U.S. NAIRU"
+title: "Estimating Non Accelerating Inflation Rate of Unemployment (NAIRU)"
 collection: publications
 category: macro
 status: 'M.Sc. Thesis'

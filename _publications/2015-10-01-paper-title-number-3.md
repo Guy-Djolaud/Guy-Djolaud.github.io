@@ -1,5 +1,5 @@
 ---
-title: "Country Climate and Development Report – Côte d’Ivoire (pages 209–216)"
+title: "Country Climate Diagnostic Report – Côte d’Ivoire (pages 209–216)"
 collection: publications
 category: policy
 venue: 'World Bank Group, 2023'
