@@ -1,4 +1,4 @@
-# Guy Djolaud – personal academic website
+# Guy-Arnold Djolaud – personal academic website
 
 Source of <https://guy-djolaud.github.io>, built with Jekyll on GitHub Pages
 (based on the [AcademicPages](https://github.com/academicpages/academicpages.github.io) template).

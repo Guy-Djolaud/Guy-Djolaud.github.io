@@ -63,6 +63,13 @@
   color: #7a5a1e;
 }
 
+/* Abstracts shown directly on the Research page */
+.pub-abstract p {
+  font-size: 0.85em;
+  line-height: 1.6;
+  margin: 0.4em 0 0.6em;
+}
+
 /* Smaller on mobile */
 @media (max-width: 768px) {
   .author__avatar img {

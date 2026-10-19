@@ -25,17 +25,12 @@
           alt="">
       </div>
     {% endif %}
-    <h2 class="archive__item-title" itemprop="headline">
-      {% if post.link %}
-        <a href="{{ post.link }}" target="_blank" rel="noopener">{{ title }}</a>
-      {% else %}
-        {{ title }}
-      {% endif %}
-    </h2>
+    <h2 class="archive__item-title" itemprop="headline">{{ title }}</h2>
     <p class="page__meta">
       <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {% if post.date_label %}{{ post.date_label }}{% else %}{{ post.date | date: '%B %Y' }}{% endif %}
       {% if post.type %} &middot; {{ post.type }}{% endif %}
       {% if post.location %} &middot; {{ post.location }}{% endif %}
+      {% if post.link %} &middot; <a href="{{ post.link }}" target="_blank" rel="noopener">Programme</a>{% endif %}
     </p>
     {% if post.venue and post.venue != "" %}<p class="archive__item-excerpt" itemprop="description">Presented: <em>{{ post.venue }}</em></p>{% endif %}
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>{% endif %}

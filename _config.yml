@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Guy Djolaud"
+title                    : "Guy-Arnold Djolaud"
 title_separator          : "-"
-name                     : &name "Guy Djolaud"
-description              : &description "Guy Djolaud, economist at McGill University: labour market power, macroeconomic shocks and fiscal policy."
+name                     : &name "Guy-Arnold Djolaud"
+description              : &description "Guy-Arnold Djolaud, economist at McGill University: labour market power, macroeconomic shocks and fiscal policy."
 url                      : https://Guy-Djolaud.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -24,7 +24,7 @@ repository               : "Guy-Djolaud.github.io"
 author:
   # Biographic information
   avatar           : "profile.jpg"
-  name             : "Guy Djolaud"
+  name             : "Guy-Arnold Djolaud"
   pronouns         : # example: "she/her"
   bio              : "Labour Economics & Macroeconomics"
   location         : "Montreal, Canada"
@@ -82,7 +82,7 @@ author:
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
   research:
-    title: 'Research'
+    title: 'Research Papers'
   working:
     title: 'Working Papers'
   policy:
