@@ -1,7 +1,8 @@
 ---
-title: "Country Climate Diagnostic Report – Cote d’Ivoire (pages 209–216)"
+title: "Country Climate and Development Report – Côte d’Ivoire (pages 209–216)"
 collection: publications
-category: conferences
+category: policy
+venue: 'World Bank Group, 2023'
 permalink: /publications/world-bank-ccdr-cote-divoire
 redirect_from:
   - /publications/2015-10-01-paper-title-number-3

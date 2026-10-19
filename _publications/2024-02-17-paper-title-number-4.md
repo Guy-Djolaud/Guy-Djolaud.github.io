@@ -1,7 +1,9 @@
 ---
-title: "Estimating Non Accelerating Inflation Rate of Unemployment (NAIRU)"
+title: "Bayesian Estimation of the U.S. NAIRU"
 collection: publications
-category: books
+category: macro
+status: 'M.Sc. Thesis'
+venue: 'Université de Montréal, 2017'
 permalink: /publications/nairu-bayesian-estimation
 redirect_from:
   - /publication/2024-02-17-paper-title-number-4

@@ -81,14 +81,12 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  submitted:
-    title: 'Submitted Papers'
-  manuscripts:
-    title: 'Working Papers'    
-  conferences:
-    title: 'Policy Papers'
-  books:
-    title: 'Pre-doctoral Papers'
+  macro:
+    title: 'Macro-Fiscal and Monetary Policy, Debt Sustainability'
+  labour:
+    title: 'Labour Markets, Jobs, and Competition'
+  policy:
+    title: 'Policy Work'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews

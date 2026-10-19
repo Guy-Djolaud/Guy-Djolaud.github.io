@@ -1,7 +1,8 @@
 ---
 title: "Import Penetration of Low Quality Products: Markup Implications"
 collection: publications
-category: manuscripts
+category: labour
+status: 'Working Paper'
 permalink: /publications/import-penetration-markups
 excerpt: ''
 date: 2022-07-14

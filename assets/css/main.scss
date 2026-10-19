@@ -51,6 +51,18 @@
   border-radius: 50%;
 }
 
+/* Status label on the Research page (Submitted, Job Market Paper, ...) */
+.pub-status {
+  display: inline-block;
+  padding: 1px 8px;
+  margin-right: 4px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  font-weight: 600;
+  background: #f6efe0;
+  color: #7a5a1e;
+}
+
 /* Smaller on mobile */
 @media (max-width: 768px) {
   .author__avatar img {
