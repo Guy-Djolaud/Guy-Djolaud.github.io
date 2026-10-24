@@ -1,10 +1,7 @@
 ---
-permalink: /
+permalink: /about/
 title: ""
 author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
 ---
 
 I am a Ph.D. Candidate in Economics at [McGill University](https://www.mcgill.ca/economics/graduates/instream-students) (thesis submitted May 2026) and a researcher at CIREQ.

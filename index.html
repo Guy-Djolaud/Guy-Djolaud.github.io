@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guy-Arnold Djolaud · Labour and Macroeconomics</title>
+  <meta name="description" content="Guy-Arnold Djolaud, economist: inflation and economic slack, monetary policy and household balance sheets, labour market power. PhD candidate, McGill University; researcher, CIREQ, Montreal.">
+  <meta property="og:title" content="Guy-Arnold Djolaud · Labour and Macroeconomics">
+  <meta property="og:description" content="Inflation and slack · Monetary policy and household debt · Labour market power. Canadian data and quantitative macroeconomic models.">
+  <meta property="og:image" content="https://guy-djolaud.github.io/images/profile.jpg">
+  <meta property="og:url" content="https://guy-djolaud.github.io/">
+  <link rel="canonical" href="https://guy-djolaud.github.io/">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fbfaf7;
+      --surface: #ffffff;
+      --text: #1d2430;
+      --muted: #5b6575;
+      --faint: #8b93a1;
+      --line: #e3e0d8;
+      --accent: #12406b;
+      --accent-soft: #e8eef5;
+      --tag: #7a5a1e;
+      --tag-bg: #f6efe0;
+      --rule: #b88a2e;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #12161d;
+        --surface: #1a2029;
+        --text: #e6e9ee;
+        --muted: #a2abb9;
+        --faint: #78828f;
+        --line: #2c3442;
+        --accent: #8db8e6;
+        --accent-soft: #1f2a38;
+        --tag: #e2c27e;
+        --tag-bg: #2e2818;
+        --rule: #8a6a2a;
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg: #12161d;
+      --surface: #1a2029;
+      --text: #e6e9ee;
+      --muted: #a2abb9;
+      --faint: #78828f;
+      --line: #2c3442;
+      --accent: #8db8e6;
+      --accent-soft: #1f2a38;
+      --tag: #e2c27e;
+      --tag-bg: #2e2818;
+      --rule: #8a6a2a;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 70px; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.65 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:hover { text-decoration-thickness: 2px; }
+    h1, h2, h3 { font-family: "Source Serif 4", Georgia, serif; line-height: 1.22; margin: 0; }
+
+    .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+    /* ---------- nav ---------- */
+    nav.top {
+      position: sticky; top: 0; z-index: 20;
+      background: color-mix(in srgb, var(--bg) 90%, transparent);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+    nav.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 58px; gap: 16px; }
+    nav.top .brand { font-family: "Source Serif 4", Georgia, serif; font-weight: 700; font-size: 17px; color: var(--text); text-decoration: none; white-space: nowrap; }
+    nav.top ul { display: flex; gap: 24px; list-style: none; margin: 0; padding: 0; font-size: 15px; }
+    nav.top ul a { color: var(--muted); text-decoration: none; }
+    nav.top ul a:hover { color: var(--accent); }
+
+    /* ---------- hero ---------- */
+    header.hero { padding: 54px 0 34px; }
+    .hero-grid { display: grid; grid-template-columns: 164px 1fr; gap: 34px; align-items: center; }
+    .hero-grid img {
+      width: 164px; height: 164px; border-radius: 50%;
+      object-fit: cover; object-position: center top;
+      border: 4px solid var(--surface); box-shadow: 0 2px 16px rgba(0,0,0,.13);
+    }
+    .hero h1 { font-size: 38px; letter-spacing: -0.01em; }
+    .hero .role {
+      font-size: 19px; color: var(--accent); font-weight: 600;
+      margin: 10px 0 0; font-family: "Source Serif 4", Georgia, serif;
+    }
+    .hero .rule { width: 72px; height: 3px; background: var(--rule); border-radius: 2px; margin: 14px 0; }
+    .hero .affil { color: var(--muted); margin: 0 0 20px; font-size: 15.5px; }
+    .btns { display: flex; flex-wrap: wrap; gap: 10px; }
+    .btn {
+      display: inline-flex; align-items: center;
+      padding: 8px 16px; border-radius: 6px; font-size: 14.5px; font-weight: 500;
+      border: 1px solid var(--accent); text-decoration: none;
+    }
+    .btn.primary { background: var(--accent); color: var(--bg); }
+    .btn.ghost { color: var(--accent); }
+
+    /* ---------- sections ---------- */
+    section { padding: 38px 0; border-top: 1px solid var(--line); }
+    section > h2 { font-size: 27px; margin-bottom: 8px; }
+    section > .sub { color: var(--faint); font-size: 14.5px; margin: 0 0 22px; }
+    .lead { font-size: 17px; margin: 0; max-width: 68ch; }
+    .lead + .lead { margin-top: 14px; }
+
+    /* ---------- theme cards ---------- */
+    .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px; }
+    .card h3 { font-size: 18px; margin-bottom: 8px; color: var(--accent); }
+    .card p { margin: 0; color: var(--muted); font-size: 14.5px; line-height: 1.6; }
+
+    /* ---------- research ---------- */
+    h3.group {
+      font-family: Inter, system-ui, sans-serif;
+      font-size: 12.5px; letter-spacing: .09em; text-transform: uppercase;
+      color: var(--muted); font-weight: 600;
+      margin: 30px 0 4px; padding-bottom: 8px; border-bottom: 2px solid var(--rule);
+    }
+    h3.group:first-of-type { margin-top: 0; }
+    .paper { padding: 18px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 72px; }
+    .paper:last-child { border-bottom: 0; }
+    .paper .title { font-family: "Source Serif 4", Georgia, serif; font-size: 19.5px; font-weight: 600; line-height: 1.3; }
+    .paper .meta { color: var(--muted); font-size: 14px; margin-top: 7px; }
+    .paper .takeaway { font-size: 15px; color: var(--text); margin: 9px 0 0; max-width: 72ch; }
+    .tag {
+      display: inline-block; font-size: 11.5px; font-weight: 600; letter-spacing: .03em;
+      padding: 3px 9px; border-radius: 4px; background: var(--tag-bg); color: var(--tag);
+      margin-right: 8px; vertical-align: 1px; text-transform: uppercase;
+    }
+    .paper .links { margin-top: 10px; font-size: 14.5px; display: flex; gap: 18px; flex-wrap: wrap; }
+    details { margin-top: 9px; }
+    details summary { cursor: pointer; color: var(--accent); font-size: 14.5px; width: fit-content; }
+    details p { margin: 9px 0 0; font-size: 14.8px; color: var(--muted); line-height: 1.68; max-width: 74ch; }
+
+    /* ---------- methods ---------- */
+    .methods { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 36px; }
+    .mrow { padding: 11px 0; border-bottom: 1px solid var(--line); }
+    .mrow dt { font-size: 12.5px; letter-spacing: .07em; text-transform: uppercase; color: var(--tag); font-weight: 600; margin-bottom: 5px; }
+    .mrow dd { margin: 0; font-size: 14.8px; color: var(--muted); line-height: 1.6; }
+
+    /* ---------- experience ---------- */
+    .exp { display: grid; grid-template-columns: 168px 1fr; gap: 4px 26px; padding: 13px 0; border-bottom: 1px solid var(--line); }
+    .exp:last-of-type { border-bottom: 0; }
+    .exp .when { color: var(--faint); font-size: 14px; }
+    .exp .what strong { display: block; font-size: 15.5px; }
+    .exp .what span { color: var(--muted); font-size: 14.6px; }
+
+    footer { border-top: 1px solid var(--line); padding: 26px 0 46px; color: var(--muted); font-size: 14.5px; }
+    footer .row { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+
+    @media (max-width: 760px) {
+      nav.top ul { gap: 15px; font-size: 14px; }
+      nav.top ul li.opt { display: none; }
+      .hero-grid { grid-template-columns: 1fr; text-align: center; gap: 20px; }
+      .hero-grid img { margin: 0 auto; width: 142px; height: 142px; }
+      .hero h1 { font-size: 30px; }
+      .hero .rule { margin: 14px auto; }
+      .btns { justify-content: center; }
+      .cards { grid-template-columns: 1fr; }
+      .methods { grid-template-columns: 1fr; }
+      .exp { grid-template-columns: 1fr; gap: 2px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="wrap">
+    <a class="brand" href="#">Guy-Arnold Djolaud</a>
+    <ul>
+      <li><a href="#research">Research</a></li>
+      <li class="opt"><a href="#methods">Methods</a></li>
+      <li class="opt"><a href="#experience">Experience</a></li>
+      <li><a href="files/Resume_Guy_Djolaud.pdf">CV</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <img src="images/profile.jpg" alt="Guy-Arnold Djolaud" width="164" height="164">
+    <div>
+      <h1>Guy-Arnold Djolaud</h1>
+      <p class="role">Labour and Macroeconomics</p>
+      <div class="rule"></div>
+      <p class="affil">PhD Candidate in Economics, McGill University (thesis submitted; degree expected December 2026) · Researcher, CIREQ · Montreal, Canada</p>
+      <div class="btns">
+        <a class="btn primary" href="files/Resume_Guy_Djolaud.pdf">Curriculum vitae</a>
+        <a class="btn ghost" href="mailto:kili.djolaud@mail.mcgill.ca">kili.djolaud@mail.mcgill.ca</a>
+        <a class="btn ghost" href="https://scholar.google.com/citations?user=H-A0nIgAAAAJ">Google Scholar</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="about">
+    <h2>About</h2>
+    <p class="lead">
+      My research is in labour economics and macroeconomics. I study how macroeconomic shocks reach Canadian
+      households and labour markets, and how policy should respond.
+    </p>
+    <p class="lead">
+      A first strand examines employer market power: how employer concentration moves over the business cycle, who is
+      most exposed to it, and how fiscal policy can mitigate its consequences.
+    </p>
+    <p class="lead">
+      A second strand asks how monetary policy should optimally respond to external shocks — foreign tariffs,
+      commodity prices, and sovereign-debt distress in a monetary union.
+    </p>
+    <p class="lead">
+      I work with confidential Statistics Canada administrative microdata. I hold an active Statistics Canada
+      security clearance and I am fully bilingual in French and English.
+    </p>
+  </section>
+
+  <section id="themes">
+    <h2>What I work on</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Labour market</h3>
+        <p>Employer concentration over the business cycle, who is most exposed to it, and how fiscal policy mitigates its consequences.</p>
+      </div>
+      <div class="card">
+        <h3>Inflation and monetary policy</h3>
+        <p>Measuring the NAIRU and the unemployment gap, and optimal policy under commitment when external shocks reach an open economy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+
+    <h3 class="group">Job market paper</h3>
+
+    <div class="paper" id="labour-market-power">
+      <div class="title">Labour Market Power in Canada: Long-Term Trends and Cyclical Dynamics</div>
+      <div class="meta"><span class="tag">Job market paper</span></div>
+      <p class="takeaway">The first time-series evidence on employer concentration in Canada: a gradual national decline, a sharp local rise in recession, and what both imply for wages and the labour share.</p>
+      <div class="links">
+        <a href="files/Labour_Market_Power_Canada_Djolaud.pdf">Paper</a>
+        <a href="files/CEA_Slides.pdf">Slides</a>
+      </div>
+      <details open>
+        <summary>Abstract</summary>
+        <p>This paper provides the first time-series analysis of labour market concentration in Canada and proposes a
+        novel approach to decomposing the underlying mechanisms. National concentration gradually declined from 2001 to
+        2019, while local concentration rose temporarily by 14 per cent during the Great Recession. The long-run decline
+        reflects two offsetting forces: increased within-industry competition, which reduced concentration, and
+        wage-bill shifts toward more concentrated sectors, which partially offset these gains. During the Great
+        Recession the pattern reverses at the local level: 68 per cent of the increase was driven by sectoral
+        reallocation. A calibrated TANK model with employer market power shows that fiscal expansions compress wage
+        markdowns, increase the labour share and markedly reduce consumption and income inequality between workers and
+        capitalists.</p>
+      </details>
+    </div>
+
+    <h3 class="group">Submitted</h3>
+
+    <div class="paper" id="nairu">
+      <div class="title">Phillips Curve Flattening Mechanically Weakens NAIRU Identification</div>
+      <div class="meta"><span class="tag">Submitted</span> August 2026</div>
+      <p class="takeaway">A flatter Phillips curve degrades NAIRU identification <em>quadratically</em>. On Canadian data, the credible interval for the unemployment gap contains zero in 97 per cent of quarters since 1991.</p>
+      <div class="links">
+        <a href="files/NAIRU_Identification_Djolaud.pdf">Paper</a>
+      </div>
+      <details>
+        <summary>Abstract</summary>
+        <p>In the standard random-walk state-space model, the likelihood information about an interior NAIRU state,
+        relative to the smoothness precision supplied by the state equation, is proportional to the squared Phillips
+        curve slope. Canadian quarterly data from 1977 to 2026 show the mechanism is quantitatively severe: across the
+        February 1991 inflation-targeting break this ratio falls by a factor of twenty-three, driven almost entirely by
+        the slope. The credible interval for the unemployment gap then contains zero in 97 per cent of quarters, against
+        73 per cent before, and without a sign restriction the posterior probability of a negative slope falls from 0.99
+        to 0.78. The result is analytical and holds for any state-space NAIRU model: a smooth posterior path is not
+        evidence that the data locate the NAIRU.</p>
+      </details>
+    </div>
+
+    <h3 class="group">Monetary policy and the open economy</h3>
+
+    <div class="paper" id="tariffs-oil">
+      <div class="title">When Tariffs Meet Oil: Optimal Monetary Policy with Household Debt</div>
+      <div class="meta"><span class="tag">Working paper</span> October 2026</div>
+      <p class="takeaway">When tariffs and oil prices rise together, optimal policy <em>eases</em> rather than tightens — and the choice of rule decides which households absorb the shock.</p>
+      <div class="links">
+        <a href="files/When_Tariffs_Meet_Oil_Djolaud.pdf">Paper</a>
+        <a href="files/When_Tariffs_Meet_Oil_Slides.pdf">Slides</a>
+      </div>
+      <details>
+        <summary>Abstract</summary>
+        <p>How should a commodity exporter set monetary policy when foreign tariffs and oil prices rise together, and who
+        bears the adjustment? I study this question in a small open economy with nominal household debt, housing
+        collateral and gradual mortgage repricing, calibrated to Canadian data. Under a CPI rule, the policy rate rises
+        and borrowers absorb most of the contraction: their consumption falls by 1.1 per cent on impact, against 0.25
+        per cent for savers. The Ramsey allocation cuts the rate by 14 basis points, roughly halves the output decline
+        and keeps borrower consumption at its no-shock level, at the cost of higher consumer price inflation. The policy
+        choice is mainly redistributive, and faster mortgage repricing lets a smaller rate cut deliver larger immediate
+        relief to indebted households.</p>
+      </details>
+    </div>
+
+    <div class="paper" id="monetary-union">
+      <div class="title">The Insurance Value of a Monetary Union: Sovereign Debt and Reserve Pooling</div>
+      <div class="meta"><span class="tag">Working paper</span></div>
+      <p class="takeaway">Pooled foreign-exchange reserves insure member countries against devaluation risk — but not against sovereign default, and they raise equilibrium borrowing.</p>
+      <details>
+        <summary>Abstract</summary>
+        <p>Pooling foreign-exchange reserves can insure members of a currency union against the monetary consequences of
+        national sovereign-debt distress, even when it does not prevent default. Monthly IMF central-bank accounts for
+        the eight WAEMU members (2007–2026) show low comovement of national foreign claims and a regional coverage ratio
+        about half as volatile as the national ones. In a quantitative model of a member economy with long-duration
+        defaultable debt under a fixed parity, pooled backing lowers the mean quarterly devaluation probability from
+        1.60 to 0.29 per cent and sharply weakens the pass-through of national reserve losses to common coverage and the
+        policy rate, while raising equilibrium borrowing (external debt of 53.5 versus 45.7 per cent of GDP) and default
+        frequency.</p>
+      </details>
+    </div>
+    <h3 class="group">Labour markets and the macroeconomy</h3>
+
+    <div class="paper" id="immigrants-concentration">
+      <div class="title">The Trajectory of Immigrants' Exposure to Labour Market Power in Canada</div>
+      <div class="meta"><span class="tag">Working paper</span> with Yaya Diallo · CLEF Working Paper, Canadian Labour Economics Forum</div>
+      <p class="takeaway">Immigrants start out in the most concentrated corners of the Canadian labour market and move toward more competitive ones as they integrate.</p>
+      <div class="links">
+        <a href="files/Immigrants_Labour_Market_Power_Diallo_Djolaud.pdf">Paper</a>
+        <a href="files/Immigrants_Labour_Market_Power_Slides.pdf">Slides</a>
+      </div>
+      <details>
+        <summary>Abstract</summary>
+        <p>This paper investigates the trajectory of labour market concentration among immigrants in the years following
+        their arrival in Canada, using tax administrative data. We find that immigrants initially enter labour markets
+        with higher concentrations of foreign-born workers. However, this concentration gradually declines over time,
+        reflecting a transition toward more competitive and diverse employment environments as immigrants integrate.
+        These findings contribute to a broader understanding of immigrant labour market assimilation and highlight the
+        role of labour market power in shaping their employment trajectories.</p>
+      </details>
+    </div>
+
+    <div class="paper" id="immigration-fiscal">
+      <div class="title">Immigration, Labour Dynamics, and Fiscal Sustainability</div>
+      <div class="meta"><span class="tag">Working paper</span> with Fatim Diabagate</div>
+      <p class="takeaway">Immigration improves fiscal sustainability; skill complementarity and the age profile of arrivals matter most.</p>
+      <div class="links">
+        <a href="files/Immigration_Labour_Dynamics_Fiscal_Sustainability.pdf">Paper</a>
+      </div>
+      <details>
+        <summary>Abstract</summary>
+        <p>This paper examines the implications of fiscal policy for debt sustainability following an immigration shock.
+        When immigrants enter a country they work, consume and save, but they also age, fall ill and lose jobs, which
+        requires government support. Using a dynamic stochastic general equilibrium model featuring life cycle, death
+        risk, skills and labour efficiency, calibrated on Canadian data, we simulate the equilibrium effect of
+        immigration on sustainable debt. Whatever the driver considered, immigration improves fiscal solvency, and the
+        largest changes come from the complementarity of immigrants' skills and their age profile.</p>
+      </details>
+    </div>
+
+  </section>
+
+  <section id="methods">
+    <h2>Methods and data</h2>
+    <p class="sub">What I bring to an applied research team.</p>
+    <dl class="methods">
+      <div class="mrow">
+        <dt>Bayesian estimation</dt>
+        <dd>MCMC and Gibbs sampling, sparse-precision state-space smoothing, unobserved-component models, posterior identification diagnostics.</dd>
+      </div>
+      <div class="mrow">
+        <dt>Quantitative models</dt>
+        <dd>Small open economy DSGE, Ramsey optimal policy under commitment, TANK models with heterogeneous households, nonlinear deterministic solution over long horizons.</dd>
+      </div>
+      <div class="mrow">
+        <dt>Applied econometrics</dt>
+        <dd>Local projections, HAC inference, difference-in-differences, decomposition methods, panel data.</dd>
+      </div>
+      <div class="mrow">
+        <dt>Data</dt>
+        <dd>Confidential Statistics Canada microdata (RDC/CIQSS, active clearance), Bank of Canada lending statistics, national accounts, supply and use tables.</dd>
+      </div>
+      <div class="mrow">
+        <dt>Software</dt>
+        <dd>MATLAB, Dynare, Stata, R, Python, LaTeX.</dd>
+      </div>
+      <div class="mrow">
+        <dt>Languages</dt>
+        <dd>French (native), English (fluent).</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section id="experience">
+    <h2>Experience and education</h2>
+    <div class="exp">
+      <div class="when">Feb 2023 – Jun 2024</div>
+      <div class="what"><strong>Climate Economics Consultant, World Bank Group</strong>
+        <span>Country Climate and Development Report, Côte d'Ivoire: macroeconomic modelling and climate finance diagnostics; co-authored pages 209–216 of the published report.</span></div>
+    </div>
+    <div class="exp">
+      <div class="when">2018 – 2026</div>
+      <div class="what"><strong>PhD in Economics, McGill University</strong>
+        <span>Thesis submitted; degree expected December 2026. <em>Three Essays in Labour and Macroeconomics</em>. Supervisor: Fabian Lange; co-supervisor: Markus Poschke.</span></div>
+    </div>
+    <div class="exp">
+      <div class="when">2016 – 2018</div>
+      <div class="what"><strong>M.Sc. in Economics, Université de Montréal</strong>
+        <span>Thesis on Bayesian state-space estimation of macroeconomic latent states. Supervised by William McCausland and Immo Schott.</span></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap row">
+    <span>© Guy-Arnold Djolaud · Montreal, Canada</span>
+    <span>
+      <a href="mailto:kili.djolaud@mail.mcgill.ca">Email</a> ·
+      <a href="https://scholar.google.com/citations?user=H-A0nIgAAAAJ">Google Scholar</a>
+    </span>
+  </div>
+</footer>
+
+</body>
+</html>
