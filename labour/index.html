@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guy-Arnold Djolaud · Économie du travail appliquée</title>
+  <meta name="description" content="Guy-Arnold Djolaud, économiste du travail appliqué : pouvoir de marché des employeurs, inégalités d'exposition entre travailleurs, secteur public, microdonnées administratives de Statistique Canada. Applied labour economist, McGill University and CIREQ, Montreal.">
+  <meta property="og:title" content="Guy-Arnold Djolaud · Économie du travail appliquée / Applied Labour Economics">
+  <meta property="og:description" content="Pouvoir de marché des employeurs, inégalités et microdonnées administratives canadiennes. Employer power, inequality and Canadian administrative microdata.">
+  <meta property="og:image" content="https://guy-djolaud.github.io/images/profile.jpg">
+  <meta property="og:url" content="https://guy-djolaud.github.io/labour/">
+  <link rel="canonical" href="https://guy-djolaud.github.io/labour/">
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fbfaf7;
+      --surface: #ffffff;
+      --text: #1d2430;
+      --muted: #5b6575;
+      --faint: #8b93a1;
+      --line: #e3e0d8;
+      --accent: #12406b;
+      --accent-soft: #e8eef5;
+      --tag: #7a5a1e;
+      --tag-bg: #f6efe0;
+      --rule: #b88a2e;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #12161d;
+        --surface: #1a2029;
+        --text: #e6e9ee;
+        --muted: #a2abb9;
+        --faint: #78828f;
+        --line: #2c3442;
+        --accent: #8db8e6;
+        --accent-soft: #1f2a38;
+        --tag: #e2c27e;
+        --tag-bg: #2e2818;
+        --rule: #8a6a2a;
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg: #12161d;
+      --surface: #1a2029;
+      --text: #e6e9ee;
+      --muted: #a2abb9;
+      --faint: #78828f;
+      --line: #2c3442;
+      --accent: #8db8e6;
+      --accent-soft: #1f2a38;
+      --tag: #e2c27e;
+      --tag-bg: #2e2818;
+      --rule: #8a6a2a;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 70px; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.65 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:hover { text-decoration-thickness: 2px; }
+    h1, h2, h3 { font-family: "Source Serif 4", Georgia, serif; line-height: 1.22; margin: 0; }
+
+    /* language switch: content exists in both languages, one is shown */
+    html[lang="fr"] [lang="en"]:not(html) { display: none !important; }
+    html[lang="en"] [lang="fr"]:not(html) { display: none !important; }
+
+    .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+    nav.top {
+      position: sticky; top: 0; z-index: 20;
+      background: color-mix(in srgb, var(--bg) 90%, transparent);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+    nav.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 58px; gap: 16px; }
+    nav.top .brand { font-family: "Source Serif 4", Georgia, serif; font-weight: 700; font-size: 17px; color: var(--text); text-decoration: none; white-space: nowrap; }
+    nav.top ul { display: flex; gap: 22px; list-style: none; margin: 0; padding: 0; font-size: 15px; align-items: center; }
+    nav.top ul a { color: var(--muted); text-decoration: none; }
+    nav.top ul a:hover { color: var(--accent); }
+    .langsw {
+      font: 600 13px/1 Inter, system-ui, sans-serif; letter-spacing: .04em;
+      border: 1px solid var(--line); background: var(--surface); color: var(--accent);
+      border-radius: 6px; padding: 7px 10px; cursor: pointer;
+    }
+    .langsw:hover { border-color: var(--accent); }
+
+    header.hero { padding: 54px 0 34px; }
+    .hero-grid { display: grid; grid-template-columns: 164px 1fr; gap: 34px; align-items: center; }
+    .hero-grid img {
+      width: 164px; height: 164px; border-radius: 50%;
+      object-fit: cover; object-position: center top;
+      border: 4px solid var(--surface); box-shadow: 0 2px 16px rgba(0,0,0,.13);
+    }
+    .hero h1 { font-size: 38px; letter-spacing: -0.01em; }
+    .hero .role { font-size: 19px; color: var(--accent); font-weight: 600; margin: 10px 0 0; font-family: "Source Serif 4", Georgia, serif; }
+    .hero .rule { width: 72px; height: 3px; background: var(--rule); border-radius: 2px; margin: 14px 0; }
+    .hero .affil { color: var(--muted); margin: 0 0 20px; font-size: 15.5px; }
+    .btns { display: flex; flex-wrap: wrap; gap: 10px; }
+    .btn { display: inline-flex; align-items: center; padding: 8px 16px; border-radius: 6px; font-size: 14.5px; font-weight: 500; border: 1px solid var(--accent); text-decoration: none; }
+    .btn.primary { background: var(--accent); color: var(--bg); }
+    .btn.ghost { color: var(--accent); }
+
+    section { padding: 38px 0; border-top: 1px solid var(--line); }
+    section > h2 { font-size: 27px; margin-bottom: 8px; }
+    section > .sub { color: var(--faint); font-size: 14.5px; margin: 0 0 22px; }
+    .lead { font-size: 17px; margin: 0; max-width: 68ch; }
+    .lead + .lead { margin-top: 14px; }
+
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px; }
+    .card h3 { font-size: 18px; margin-bottom: 8px; color: var(--accent); }
+    .card p { margin: 0; color: var(--muted); font-size: 14.5px; line-height: 1.6; }
+
+    .paper { padding: 20px 0; border-bottom: 1px solid var(--line); }
+    .paper:last-child { border-bottom: 0; }
+    .paper .num { font: 600 12.5px/1 Inter, system-ui, sans-serif; letter-spacing: .09em; text-transform: uppercase; color: var(--rule); }
+    .paper .title { font-family: "Source Serif 4", Georgia, serif; font-size: 20px; font-weight: 600; line-height: 1.3; margin-top: 6px; }
+    .paper .meta { color: var(--muted); font-size: 14px; margin-top: 7px; }
+    .paper .takeaway { font-size: 15.5px; margin: 10px 0 0; max-width: 72ch; }
+    .facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 14px 0 0; }
+    .fact { background: var(--accent-soft); border-radius: 8px; padding: 12px 14px; }
+    .fact b { display: block; font-family: "Source Serif 4", Georgia, serif; font-size: 24px; color: var(--accent); line-height: 1.1; }
+    .fact > span { font-size: 13.5px; color: var(--muted); line-height: 1.45; display: block; margin-top: 4px; }
+    .tag { display: inline-block; font-size: 11.5px; font-weight: 600; letter-spacing: .03em; padding: 3px 9px; border-radius: 4px; background: var(--tag-bg); color: var(--tag); margin-right: 8px; vertical-align: 1px; text-transform: uppercase; }
+    .paper .links { margin-top: 12px; font-size: 14.5px; display: flex; gap: 18px; flex-wrap: wrap; }
+    details { margin-top: 10px; }
+    details summary { cursor: pointer; color: var(--accent); font-size: 14.5px; width: fit-content; }
+    details p { margin: 9px 0 0; font-size: 14.8px; color: var(--muted); line-height: 1.68; max-width: 74ch; }
+
+    .methods { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 36px; margin: 0; }
+    .mrow { padding: 11px 0; border-bottom: 1px solid var(--line); }
+    .mrow dt { font-size: 12.5px; letter-spacing: .07em; text-transform: uppercase; color: var(--tag); font-weight: 600; margin-bottom: 5px; }
+    .mrow dd { margin: 0; font-size: 14.8px; color: var(--muted); line-height: 1.6; }
+
+    .list { margin: 0; padding: 0; list-style: none; }
+    .list li { padding: 11px 0; border-bottom: 1px solid var(--line); font-size: 15px; }
+    .list li:last-child { border-bottom: 0; }
+    .list li span { color: var(--muted); font-size: 14.5px; }
+
+    .exp { display: grid; grid-template-columns: 168px 1fr; gap: 4px 26px; padding: 13px 0; border-bottom: 1px solid var(--line); }
+    .exp:last-of-type { border-bottom: 0; }
+    .exp .when { color: var(--faint); font-size: 14px; }
+    .exp .what strong { display: block; font-size: 15.5px; }
+    .exp .what span { color: var(--muted); font-size: 14.6px; }
+
+    footer { border-top: 1px solid var(--line); padding: 26px 0 46px; color: var(--muted); font-size: 14.5px; }
+    footer .row { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+
+    @media (max-width: 760px) {
+      nav.top ul { gap: 14px; font-size: 14px; }
+      nav.top ul li.opt { display: none; }
+      .hero-grid { grid-template-columns: 1fr; text-align: center; gap: 20px; }
+      .hero-grid img { margin: 0 auto; width: 142px; height: 142px; }
+      .hero h1 { font-size: 30px; }
+      .hero .rule { margin: 14px auto; }
+      .btns { justify-content: center; }
+      .cards, .facts, .methods { grid-template-columns: 1fr; }
+      .exp { grid-template-columns: 1fr; gap: 2px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="wrap">
+    <a class="brand" href="#">Guy-Arnold Djolaud</a>
+    <ul>
+      <li><a href="#research"><span lang="fr">Recherche</span><span lang="en">Research</span></a></li>
+      <li class="opt"><a href="#methods"><span lang="fr">Méthodes</span><span lang="en">Methods</span></a></li>
+      <li class="opt"><a href="#experience"><span lang="fr">Parcours</span><span lang="en">Experience</span></a></li>
+      <li><a href="../files/Resume_Guy_Djolaud.pdf">CV</a></li>
+      <li><button class="langsw" id="langsw" type="button" aria-label="Switch language / Changer de langue">EN</button></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <img src="../images/profile.jpg" alt="Guy-Arnold Djolaud" width="164" height="164">
+    <div>
+      <h1>Guy-Arnold Djolaud</h1>
+      <p class="role"><span lang="fr">Économiste du travail appliqué</span><span lang="en">Applied Labour Economist</span></p>
+      <div class="rule"></div>
+      <p class="affil">
+        <span lang="fr">Doctorat en économie, Université McGill (thèse déposée; diplôme prévu en décembre 2026) · Chercheur, CIREQ · Montréal</span>
+        <span lang="en">PhD in Economics, McGill University (thesis submitted; degree expected December 2026) · Researcher, CIREQ · Montreal</span>
+      </p>
+      <div class="btns">
+        <a class="btn primary" href="../files/Resume_Guy_Djolaud.pdf"><span lang="fr">Curriculum vitæ</span><span lang="en">Curriculum vitae</span></a>
+        <a class="btn ghost" href="mailto:kili.djolaud@mail.mcgill.ca">kili.djolaud@mail.mcgill.ca</a>
+        <a class="btn ghost" href="https://scholar.google.com/citations?user=H-A0nIgAAAAJ">Google Scholar</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="about">
+    <h2><span lang="fr">Profil</span><span lang="en">About</span></h2>
+    <div lang="fr">
+      <p class="lead">Je mesure comment le pouvoir des employeurs se répartit sur le marché du travail canadien, et qui y est le plus exposé. Mes trois essais de thèse portent sur la concentration des employeurs dans le temps, sur l'exposition des travailleurs immigrants selon le genre et la catégorie d'admission, et sur le rôle du secteur public.</p>
+      <p class="lead">Je travaille sur les microdonnées administratives confidentielles de Statistique Canada (BEAM, BDIM, CEEDD), que j'utilise pour construire des indicateurs suivis dans le temps et des décompositions qui expliquent leurs variations. Je détiens une cote de sécurité active de Statistique Canada. Je présente mes résultats à des publics variés, des séminaires universitaires à la Banque mondiale, et je suis parfaitement bilingue.</p>
+    </div>
+    <div lang="en">
+      <p class="lead">I measure how employer power is distributed in the Canadian labour market and who is most exposed to it. My three thesis essays study employer concentration over time, the exposure of immigrant workers by gender and admission category, and the role of the public sector.</p>
+      <p class="lead">I work with confidential Statistics Canada administrative microdata (BEAM, IMDB, CEEDD) to build indicators tracked over time and decompositions that explain their changes. I hold an active Statistics Canada security clearance. I present my results to varied audiences, from academic seminars to the World Bank, and I am fully bilingual in French and English.</p>
+    </div>
+  </section>
+
+  <section id="themes">
+    <h2><span lang="fr">Domaines</span><span lang="en">What I work on</span></h2>
+    <div class="cards">
+      <div class="card">
+        <h3><span lang="fr">Inégalités et pouvoir des employeurs</span><span lang="en">Inequality and employer power</span></h3>
+        <p><span lang="fr">Qui fait face aux marchés du travail les plus concentrés : immigrants, femmes, réfugiés, travailleurs selon la région et le secteur.</span><span lang="en">Who faces the most concentrated labour markets: immigrants, women, refugees, workers by region and sector.</span></p>
+      </div>
+      <div class="card">
+        <h3><span lang="fr">Indicateurs et microdonnées</span><span lang="en">Indicators and microdata</span></h3>
+        <p><span lang="fr">Séries annuelles construites sur l'ensemble des employeurs et travailleurs du Canada, et décompositions qui en expliquent les variations.</span><span lang="en">Annual series built on all Canadian employers and workers, and decompositions that explain their changes.</span></p>
+      </div>
+      <div class="card">
+        <h3><span lang="fr">Politiques publiques</span><span lang="en">Public policy</span></h3>
+        <p><span lang="fr">Rôle du secteur public comme employeur, effets des récessions et de la politique budgétaire sur la répartition des revenus.</span><span lang="en">The public sector as an employer, and how recessions and fiscal policy affect the distribution of income.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="research">
+    <h2><span lang="fr">Recherche : trois essais sur le pouvoir de marché des employeurs</span><span lang="en">Research: three essays on labour market power</span></h2>
+    <p class="sub"><span lang="fr">Thèse de doctorat, Université McGill, 2026. Les articles sont en anglais.</span><span lang="en">PhD thesis, McGill University, 2026.</span></p>
+
+    <div class="paper" id="labour-market-power">
+      <div class="num"><span lang="fr">Chapitre 2 de la thèse · article principal</span><span lang="en">Thesis chapter 2 · job market paper</span></div>
+      <div class="title">Labour Market Power in Canada: Long-Term Trends and Cyclical Dynamics</div>
+      <div class="meta"><span class="tag">Working paper</span><span lang="fr">Octobre 2026</span><span lang="en">October 2026</span></div>
+      <p class="takeaway">
+        <span lang="fr">La première série temporelle de la concentration des employeurs au Canada (2001–2019) : un recul à long terme, une hausse marquée pendant la Grande Récession, et un effet de la concentration sur la rémunération versée par les entreprises.</span>
+        <span lang="en">The first time series of employer concentration in Canada (2001–2019): a long-run decline, a sharp rise during the Great Recession, and an effect of concentration on the pay firms offer.</span>
+      </p>
+      <div class="facts">
+        <div class="fact"><b>+14 %</b><span lang="fr">hausse de la concentration locale, 2007–2009</span><span lang="en">rise in local concentration, 2007–2009</span></div>
+        <div class="fact"><b>54 %</b><span lang="fr">du recul à long terme dû à l'administration publique</span><span lang="en">of the long-run decline due to Public Administration</span></div>
+        <div class="fact"><b>−0,028</b><span lang="fr">élasticité de la prime salariale des entreprises à la concentration</span><span lang="en">elasticity of the firm wage premium to concentration</span></div>
+      </div>
+      <div class="links">
+        <a href="../files/Labour_Market_Power_Canada_Djolaud.pdf"><span lang="fr">Article (PDF)</span><span lang="en">Paper (PDF)</span></a>
+        <a href="../files/Labour_Market_Power_Canada_Slides.pdf"><span lang="fr">Présentation</span><span lang="en">Slides</span></a>
+      </div>
+      <details>
+        <summary><span lang="fr">Résumé</span><span lang="en">Abstract</span></summary>
+        <p lang="fr">À partir des données appariées employeurs-employés de Statistique Canada pour 2001–2019 et d'un indice de Herfindahl calculé sur la masse salariale, l'article montre que la concentration nationale et la concentration locale ont reculé à long terme, mais ont divergé pendant la Grande Récession, lorsque la concentration locale a augmenté de 14 %. À l'échelle de l'économie, l'administration publique explique 54 % du recul de la concentration locale à l'intérieur des provinces, en lien avec la restructuration fédérale qui a suivi le budget de 2012 ; pendant la récession, le déplacement de la masse salariale vers ce secteur très concentré explique 68 % de la hausse. Dans le secteur privé, le recul à long terme vient de la baisse de la concentration à l'intérieur des industries, et les entrées et sorties d'entreprises ont amplifié la hausse pendant la récession. Avec un instrument « leave-one-out », la prime salariale des entreprises diminue lorsque la concentration augmente. Enfin, un modèle néo-keynésien à deux agents montre que les dépenses publiques réduisent l'écart entre salaire et productivité marginale et déplacent le revenu des profits vers les salaires.</p>
+        <p lang="en">Using Statistics Canada linked employer–employee data for 2001–2019 and a wage-bill Herfindahl index, the paper shows that national and local concentration declined over the long run but diverged during the Great Recession, when aggregate local concentration rose by 14 per cent. Economy-wide, Public Administration accounts for 54 per cent of the long-run within-province decline in local concentration, consistent with the federal restructuring that followed Budget 2012, and wage-bill reallocation toward this highly concentrated sector explains 68 per cent of the within-province rise during the recession. In the private sector, the long-run decline comes from falling concentration within industries, and entry and exit amplified the recession-era increase. With a leave-one-out instrument, the market-level firm wage premium falls with concentration. Finally, a two-agent New Keynesian model with an endogenous wage markdown shows that government spending narrows markdowns and shifts income from profits to wages.</p>
+      </details>
+    </div>
+
+    <div class="paper" id="immigrants">
+      <div class="num"><span lang="fr">Chapitre 3 de la thèse</span><span lang="en">Thesis chapter 3</span></div>
+      <div class="title">The Trajectory of Immigrants' Exposure to Labour Market Power in Canada</div>
+      <div class="meta"><span class="tag">Working paper</span><span lang="fr">avec Yaya Diallo · CLEF Working Paper, Canadian Labour Economics Forum, 2026</span><span lang="en">with Yaya Diallo · CLEF Working Paper, Canadian Labour Economics Forum, 2026</span></div>
+      <p class="takeaway">
+        <span lang="fr">Les immigrants commencent leur parcours dans des marchés du travail nettement plus concentrés que ceux des natifs, puis s'en éloignent au fil de leur intégration, à un rythme qui varie selon le genre et la catégorie d'admission.</span>
+        <span lang="en">Immigrants start out in labour markets far more concentrated than those of native-born workers and move away from them as they integrate, at a pace that differs by gender and admission category.</span>
+      </p>
+      <div class="facts">
+        <div class="fact"><b>+77 %</b><span lang="fr">concentration à l'arrivée par rapport aux natifs</span><span lang="en">concentration at arrival relative to native-born workers</span></div>
+        <div class="fact"><b>−60 %</b><span lang="fr">baisse de l'exposition des femmes réfugiées en dix ans</span><span lang="en">decline in exposure for refugee women over ten years</span></div>
+        <div class="fact"><b>75 %</b><span lang="fr">des immigrants ont changé d'industrie dans leur province après dix ans</span><span lang="en">of immigrants have changed industry within their province after ten years</span></div>
+      </div>
+      <div class="links">
+        <a href="../files/Immigrants_Labour_Market_Power_Diallo_Djolaud.pdf"><span lang="fr">Article (PDF)</span><span lang="en">Paper (PDF)</span></a>
+        <a href="../files/Immigrants_Labour_Market_Power_Slides.pdf"><span lang="fr">Présentation</span><span lang="en">Slides</span></a>
+      </div>
+      <details>
+        <summary><span lang="fr">Résumé</span><span lang="en">Abstract</span></summary>
+        <p lang="fr">À partir de la Base de données longitudinales sur l'immigration (BDIM) appariée aux dossiers fiscaux des employeurs, l'article suit l'exposition des immigrants à la concentration des employeurs au cours de leurs dix premières années au Canada. À l'arrivée, l'emploi des immigrants est environ 77 % plus concentré que celui des natifs. Cette exposition diminue ensuite régulièrement, pour les hommes comme pour les femmes et pour toutes les catégories d'admission : de 27,5 % pour les hommes immigrants économiques et de 60 % pour les femmes réfugiées. Le recul vient surtout d'ajustements à l'intérieur des marchés, vers des employeurs moins dominants, tandis que les déplacements vers des provinces plus concentrées le freinent en partie.</p>
+        <p lang="en">Using the Longitudinal Immigration Database (IMDB) linked to employer tax records, the paper follows immigrants' exposure to employer concentration over their first decade in Canada. At arrival, immigrant employment is about 77 per cent more concentrated than that of native-born workers. Exposure then declines steadily for men and women and across admission categories: by 27.5 per cent for male economic immigrants and by 60 per cent for female refugees. The decline comes mainly from adjustment within markets, toward less dominant employers, while sorting toward more concentrated provinces partly offsets it.</p>
+      </details>
+    </div>
+
+    <div class="paper" id="public-sector">
+      <div class="num"><span lang="fr">Chapitre 1 de la thèse</span><span lang="en">Thesis chapter 1</span></div>
+      <div class="title">The Overlooked Role of the Public Sector in Labour Market Power</div>
+      <div class="meta"><span class="tag"><span lang="fr">En cours</span><span lang="en">Work in progress</span></span></div>
+      <p class="takeaway">
+        <span lang="fr">L'administration publique est l'employeur le plus concentré du Canada, mais celui qui exerce le moins de pouvoir sur les salaires. Elle reste une option de rechange importante pour les travailleurs de plusieurs industries privées, comme la santé, l'éducation et la finance.</span>
+        <span lang="en">Public Administration is the most concentrated employer in Canada, yet the one with the least wage-setting power. It remains an important alternative for workers in several private industries, such as health care, education and finance.</span>
+      </p>
+      <div class="facts">
+        <div class="fact"><b><span lang="fr">1<sup>er</sup></span><span lang="en">1st</span></b><span lang="fr">rang pour la concentration des employeurs, parmi les 20 secteurs</span><span lang="en">rank for employer concentration among 20 sectors</span></div>
+        <div class="fact"><b>3 %</b><span lang="fr">de la variance des revenus due aux effets employeurs, le plus faible des 19 secteurs</span><span lang="en">of earnings variance due to employer effects, the lowest of 19 sectors</span></div>
+        <div class="fact"><b>8</b><span lang="fr">industries privées dont l'administration publique est une destination majeure</span><span lang="en">private industries for which Public Administration is a major destination</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="methods">
+    <h2><span lang="fr">Méthodes et données</span><span lang="en">Methods and data</span></h2>
+    <p class="sub"><span lang="fr">Ce que j'apporte à une équipe de recherche appliquée.</span><span lang="en">What I bring to an applied research team.</span></p>
+    <dl class="methods">
+      <div class="mrow">
+        <dt><span lang="fr">Microdonnées administratives</span><span lang="en">Administrative microdata</span></dt>
+        <dd><span lang="fr">Statistique Canada : BEAM, BDIM, CEEDD, fichiers T1 et T4, Enquête sur la population active ; accès en CDR (CIQSS), cote de sécurité active.</span><span lang="en">Statistics Canada: BEAM, IMDB, CEEDD, T1 and T4 files, Labour Force Survey; RDC access (CIQSS), active security clearance.</span></dd>
+      </div>
+      <div class="mrow">
+        <dt><span lang="fr">Indicateurs et décompositions</span><span lang="en">Indicators and decompositions</span></dt>
+        <dd><span lang="fr">Indices de concentration, séries annuelles, décompositions intra/inter (provinces, industries, entrées et sorties d'entreprises).</span><span lang="en">Concentration indices, annual series, within/between decompositions (provinces, industries, firm entry and exit).</span></dd>
+      </div>
+      <div class="mrow">
+        <dt><span lang="fr">Économétrie appliquée</span><span lang="en">Applied econometrics</span></dt>
+        <dd><span lang="fr">Modèles à effets fixes travailleurs-employeurs (AKM), variables instrumentales, profils d'assimilation, logit multinomial, différences de différences, données de panel.</span><span lang="en">Worker–firm fixed effects (AKM), instrumental variables, assimilation profiles, multinomial logit, difference-in-differences, panel data.</span></dd>
+      </div>
+      <div class="mrow">
+        <dt><span lang="fr">Analyse différenciée</span><span lang="en">Group-based analysis</span></dt>
+        <dd><span lang="fr">Résultats ventilés selon le genre, l'âge, la catégorie d'admission, la région et le secteur.</span><span lang="en">Results broken down by gender, age, admission category, region and sector.</span></dd>
+      </div>
+      <div class="mrow">
+        <dt><span lang="fr">Modélisation</span><span lang="en">Modelling</span></dt>
+        <dd><span lang="fr">Modèles macroéconomiques à agents hétérogènes (TANK, DSGE) pour évaluer les effets distributifs des politiques.</span><span lang="en">Macroeconomic models with heterogeneous agents (TANK, DSGE) to assess the distributional effects of policy.</span></dd>
+      </div>
+      <div class="mrow">
+        <dt><span lang="fr">Logiciels et langues</span><span lang="en">Software and languages</span></dt>
+        <dd><span lang="fr">Stata, R, Python, MATLAB, LaTeX · français (langue maternelle), anglais (courant).</span><span lang="en">Stata, R, Python, MATLAB, LaTeX · French (native), English (fluent).</span></dd>
+      </div>
+    </dl>
+  </section>
+
+  <section id="transfer">
+    <h2><span lang="fr">Transfert de connaissances</span><span lang="en">Knowledge transfer</span></h2>
+    <ul class="list">
+      <li><strong><span lang="fr">Présentations</span><span lang="en">Presentations</span></strong><br>
+        <span><span lang="fr">Congrès annuel de l'Association canadienne d'économique (2025) ; séminaire de l'économiste en chef du Groupe de la Banque mondiale, Washington (2024) ; conférence Institutions and Regional Development, Naples (2024) ; conférences du CIREQ, Université McGill (2023, 2024).</span><span lang="en">Canadian Economics Association Annual Conference (2025); World Bank Group Chief Economist Seminar, Washington, D.C. (2024); Institutions and Regional Development Conference, Naples (2024); CIREQ conferences, McGill University (2023, 2024).</span></span></li>
+      <li><strong>Country Climate and Development Report – Côte d'Ivoire</strong><br>
+        <span><span lang="fr">Groupe de la Banque mondiale, 2023 · coauteur des pages 209–216.</span><span lang="en">World Bank Group, 2023 · co-author of pages 209–216.</span> <a href="https://documents1.worldbank.org/curated/en/099112223090537113/pdf/P17953304fb0f70f10a64e0ec2e678e931f.pdf"><span lang="fr">Rapport (PDF)</span><span lang="en">Report (PDF)</span></a></span></li>
+      <li><strong>IFC White Paper – Banking on Women Who Trade Across Borders</strong><br>
+        <span><span lang="fr">Société financière internationale, 2024 · accès au financement des femmes commerçantes transfrontalières.</span><span lang="en">International Finance Corporation, 2024 · access to finance for women cross-border traders.</span></span></li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2><span lang="fr">Parcours</span><span lang="en">Experience and education</span></h2>
+    <div class="exp">
+      <div class="when"><span lang="fr">fév. 2023 – juin 2024</span><span lang="en">Feb 2023 – Jun 2024</span></div>
+      <div class="what"><strong><span lang="fr">Consultant en économie du climat, Groupe de la Banque mondiale</span><span lang="en">Climate Economics Consultant, World Bank Group</span></strong>
+        <span><span lang="fr">Rapport national sur le climat et le développement (Côte d'Ivoire) : modélisation macroéconomique et diagnostic du financement climatique.</span><span lang="en">Country Climate and Development Report (Côte d'Ivoire): macroeconomic modelling and climate finance diagnostics.</span></span></div>
+    </div>
+    <div class="exp">
+      <div class="when">2018 – 2020</div>
+      <div class="what"><strong><span lang="fr">Auxiliaire d'enseignement, Université McGill</span><span lang="en">Teaching Assistant, McGill University</span></strong>
+        <span><span lang="fr">Politique macroéconomique.</span><span lang="en">Macroeconomic Policy.</span></span></div>
+    </div>
+    <div class="exp">
+      <div class="when">2018 – 2026</div>
+      <div class="what"><strong><span lang="fr">Doctorat en économie, Université McGill</span><span lang="en">PhD in Economics, McGill University</span></strong>
+        <span><span lang="fr">Thèse déposée ; diplôme prévu en décembre 2026. <em>Three Essays on Labour Market Power</em>. Directeur : Fabian Lange ; codirecteur : Markus Poschke.</span><span lang="en">Thesis submitted; degree expected December 2026. <em>Three Essays on Labour Market Power</em>. Supervisor: Fabian Lange; co-supervisor: Markus Poschke.</span></span></div>
+    </div>
+    <div class="exp">
+      <div class="when">2016 – 2018</div>
+      <div class="what"><strong><span lang="fr">M. Sc. en sciences économiques, Université de Montréal</span><span lang="en">M.Sc. in Economics, Université de Montréal</span></strong></div>
+    </div>
+    <div class="exp">
+      <div class="when">2013 – 2014</div>
+      <div class="what"><strong><span lang="fr">MBA en gestion de projets, CESAG, Dakar</span><span lang="en">MBA in Project Management, CESAG, Dakar</span></strong></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap row">
+    <span>© Guy-Arnold Djolaud · Montréal, Canada</span>
+    <span>
+      <a href="mailto:kili.djolaud@mail.mcgill.ca">Email</a> ·
+      <a href="https://scholar.google.com/citations?user=H-A0nIgAAAAJ">Google Scholar</a> ·
+      <a href="https://guy-djolaud.github.io/"><span lang="fr">Site académique</span><span lang="en">Academic website</span></a>
+    </span>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var btn = document.getElementById('langsw');
+    var titles = {
+      fr: 'Guy-Arnold Djolaud · Économie du travail appliquée',
+      en: 'Guy-Arnold Djolaud · Applied Labour Economics'
+    };
+    function apply(lang) {
+      root.setAttribute('lang', lang);
+      btn.textContent = lang === 'fr' ? 'EN' : 'FR';
+      document.title = titles[lang];
+    }
+    var lang = 'fr';
+    var param = new URLSearchParams(window.location.search).get('lang');
+    if (param === 'en' || param === 'fr') {
+      lang = param;
+    } else {
+      try { var saved = localStorage.getItem('gd-lang'); if (saved === 'en' || saved === 'fr') lang = saved; } catch (e) {}
+    }
+    apply(lang);
+    btn.addEventListener('click', function () {
+      var next = root.getAttribute('lang') === 'fr' ? 'en' : 'fr';
+      apply(next);
+      try { localStorage.setItem('gd-lang', next); } catch (e) {}
+    });
+  })();
+</script>
+
+</body>
+</html>
