@@ -9,7 +9,7 @@ redirect_from:
   - /publications/2009-10-01-paper-title-number-1
 excerpt: ''
 date: 2026-10-27
-slidesurl: '/files/CEA_Slides.pdf'
+slidesurl: '/files/Labour_Market_Power_Canada_Slides.pdf'
 paperurl: '/files/Labour_Market_Power_Canada_Djolaud.pdf'
 ---
 
