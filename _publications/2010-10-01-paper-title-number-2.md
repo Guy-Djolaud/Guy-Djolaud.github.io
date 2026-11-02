@@ -1,5 +1,5 @@
 ---
-title: "The Trajectory of Immigrants’ Exposure to Labour Market Power in Canada"
+title: "Dynamic of Labour Market Concentration: Trajectory of Immigrants in Canada"
 collection: publications
 category: working
 order: 4
@@ -8,8 +8,8 @@ permalink: /publications/immigrants-labour-market-power
 redirect_from:
   - /publication/2010-10-01-paper-title-number-2
 excerpt: 'with [Yaya Diallo](https://myayadiallo.com/)'
-date: 2025-10-01
-venue: 'CLEF Working Paper, Canadian Labour Economics Forum'
+date: 2026-05-01
+venue: 'CLEF Working Paper #96, Canadian Labour Economics Forum'
 slidesurl: '/files/2025_CRDCN_Labor_Market_Concentration.pdf'
 paperurl: '/files/2025_Diallo_Guy_Labor_concentration_of_Foreign_born_in_Canada_.pdf'
 ---
